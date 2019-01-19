@@ -1,7 +1,7 @@
 {
   "name": "monarch.js",
-  "version": "0.1.2",
-  "description": "monarch.js is migrated from Microsoft Monarch",
+  "version": "0.1.3",
+  "description": "monarch.js is migrated from Microsoft Monarch inside Microsoft VSCode to parse source code text into tokens",
   "main": "index.js",
   "scripts": {
     "test": "echo 'No test'"
