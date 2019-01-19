@@ -34,12 +34,28 @@ function Tokenizer(language) {
       getLexer: () => lexer,
       getTokenizer: () => adapter,
       classicTokenize: (text) => {
-         let r = adapter.tokenize(text, {
+         let state = {
             stack: monarchLexer.MonarchStackElementFactory.create(null, 'root'),
             embeddedModeData: null
-         }, 0);
-         if (r) return r.tokens;
-         throw 'Unknown error.';
+         };
+         let tokens = [];
+         let lines = text.split('\n');
+         let text_offset = 0;
+         lines.forEach((line) => {
+            let r = adapter.tokenize(line, state, 0);
+            if (r) {
+               r.tokens.forEach((token) => {
+                  token.offset += text_offset;
+                  return token;
+               });
+               tokens = tokens.concat(r.tokens);
+               state = r.endState;
+               text_offset += line.length+1;
+            } else {
+               throw 'Unknown parsing error.';
+            }
+         });
+         return tokens;
       },
       modernTokenize: (text) => {
          // TODO: mock modeService and themeService
