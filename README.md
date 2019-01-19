@@ -81,71 +81,7 @@ console.log(result);
       "type": "keyword.static.java",
       "language": "java"
    },
-   {
-      "offset": 83,
-      "type": "",
-      "language": "java"
-   },
-   {
-      "offset": 84,
-      "type": "keyword.void.java",
-      "language": "java"
-   },
-   {
-      "offset": 88,
-      "type": "",
-      "language": "java"
-   },
-   {
-      "offset": 89,
-      "type": "identifier.java",
-      "language": "java"
-   },
-   {
-      "offset": 93,
-      "type": "delimiter.parenthesis.java",
-      "language": "java"
-   },
-   {
-      "offset": 94,
-      "type": "identifier.java",
-      "language": "java"
-   },
-   {
-      "offset": 100,
-      "type": "delimiter.square.java",
-      "language": "java"
-   },
-   {
-      "offset": 102,
-      "type": "",
-      "language": "java"
-   },
-   {
-      "offset": 103,
-      "type": "identifier.java",
-      "language": "java"
-   },
-   {
-      "offset": 107,
-      "type": "delimiter.parenthesis.java",
-      "language": "java"
-   },
-   {
-      "offset": 108,
-      "type": "",
-      "language": "java"
-   },
-   {
-      "offset": 109,
-      "type": "delimiter.curly.java",
-      "language": "java"
-   },
-   {
-      "offset": 111,
-      "type": "",
-      "language": "java"
-   },
+...
    {
       "offset": 117,
       "type": "identifier.java",

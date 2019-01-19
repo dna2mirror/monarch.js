@@ -18,8 +18,10 @@ function Load (language) {
    }
 }
 
-function Tokenizer(language) {
-   let language_package = tokenizer[language];
+function Tokenizer(language, externalTokenizer) {
+   let tokenizerSet = externalTokenizer;
+   if (!tokenizerSet) tokenizerSet = tokenizer;
+   let language_package = tokenizerSet[language];
    if (!language_package) {
       throw 'Error: cannot find the package of the specified language.';
    }
