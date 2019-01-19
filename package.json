@@ -1,6 +1,6 @@
 {
   "name": "monarch.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "monarch.js is migrated from Microsoft Monarch",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,8 @@
   "devDependencies": {
     "typescript": "^3.2.4",
     "@types/node": "^10.12.18"
+  },
+  "dependencies": {
+    "monaco-languages": "^1.6.0"
   }
 }
