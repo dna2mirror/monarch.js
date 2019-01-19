@@ -1,6 +1,6 @@
 {
   "name": "monarch.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "monarch.js is migrated from Microsoft Monarch",
   "main": "index.js",
   "scripts": {
@@ -21,9 +21,7 @@
   "homepage": "https://github.com/dna2mirror/monarch.js#readme",
   "devDependencies": {
     "typescript": "^3.2.4",
-    "@types/node": "^10.12.18"
-  },
-  "dependencies": {
+    "@types/node": "^10.12.18",
     "monaco-languages": "^1.6.0"
   }
 }

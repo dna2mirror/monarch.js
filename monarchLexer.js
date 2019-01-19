@@ -737,3 +737,4 @@ function createTokenizationSupport(modeService, standaloneThemeService, modeId, 
     return new MonarchTokenizer(modeService, standaloneThemeService, modeId, lexer);
 }
 exports.createTokenizationSupport = createTokenizationSupport;
+exports.MonarchStackElementFactory = MonarchStackElementFactory;

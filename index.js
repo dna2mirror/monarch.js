@@ -2,7 +2,6 @@ const monarchCompile = require('./monarchCompile');
 const monarchLexer = require('./monarchLexer');
 
 const tokenizer = {
-   cpp: require('./languages/cpp'),
 };
 
 function Load (language) {
@@ -25,18 +24,18 @@ function Tokenizer(language) {
       throw 'Error: cannot find the package of the specified language.';
    }
    let lexer = monarchCompile.compile(
-      tokenizer.cpp.name,
-      tokenizer.cpp.language
+      language_package.name,
+      language_package.language
    );
    let adapter = monarchLexer.createTokenizationSupport(
-      null, null, tokenizer.cpp.name, lexer
+      null, null, language_package.name, lexer
    );
    return {
       getLexer: () => lexer,
       getTokenizer: () => adapter,
       classicTokenize: (text) => {
          let r = adapter.tokenize(text, {
-            stack: { parent: null, depth: 0, state: 'root' },
+            stack: monarchLexer.MonarchStackElementFactory.create(null, 'root'),
             embeddedModeData: null
          }, 0);
          if (r) return r.tokens;

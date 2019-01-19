@@ -1,6 +1,11 @@
 const monarch = require('./index');
 
-monarch.Load('cpp');
-let tokenizer = monarch.Tokenizer('cpp');
-let result = tokenizer.classicTokenize('int main () {\n\treturn 0;\n}\n');
+monarch.Load('java');
+let tokenizer = monarch.Tokenizer('java');
+let result = tokenizer.classicTokenize(`// Type source code in your Java here...
+public class HelloWorld {
+   public static void main(String[] args) {
+      System.out.println("Hello, World");
+   }
+}`);
 console.log(result);
