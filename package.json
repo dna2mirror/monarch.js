@@ -1,0 +1,26 @@
+{
+  "name": "monarch.js",
+  "version": "0.1.0",
+  "description": "monarch.js is migrated from Microsoft Monarch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'No test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dna2mirror/monarch.js.git"
+  },
+  "keywords": [
+    "monarch"
+  ],
+  "author": "Seven Lju",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dna2mirror/monarch.js/issues"
+  },
+  "homepage": "https://github.com/dna2mirror/monarch.js#readme",
+  "devDependencies": {
+    "typescript": "^3.2.4",
+    "@types/node": "^10.12.18"
+  }
+}
