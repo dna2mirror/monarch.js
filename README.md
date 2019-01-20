@@ -15,7 +15,7 @@ public class HelloWorld {
       System.out.println("Hello, World");
    }
 }`);
-console.log(result);
+console.log(JSON.stringify(result, null, 3));
 
 
 ### output sample ###
@@ -149,7 +149,7 @@ console.log(result);
 
 1. npm install monaco-languages
 2. select a language and copy its '.js' file
-3. remove `define` wrap and add `exports.name`
-4. (alternatively) run `scripts/update_languages.sh` to import all from monaco-languages
+3. remove `define` wrap for ASM style (change `export var ...` to `exports.` for ESM style)
+4. add `exports.name`
 
 see also the example of `languages/cpp.js`
