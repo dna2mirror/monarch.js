@@ -51,67 +51,7 @@ console.log(JSON.stringify(result, null, 3));
       "type": "identifier.java",
       "language": "java"
    },
-   {
-      "offset": 64,
-      "type": "",
-      "language": "java"
-   },
-   {
-      "offset": 65,
-      "type": "delimiter.curly.java",
-      "language": "java"
-   },
-   {
-      "offset": 67,
-      "type": "",
-      "language": "java"
-   },
-   {
-      "offset": 70,
-      "type": "keyword.public.java",
-      "language": "java"
-   },
-   {
-      "offset": 76,
-      "type": "",
-      "language": "java"
-   },
-   {
-      "offset": 77,
-      "type": "keyword.static.java",
-      "language": "java"
-   },
 ...
-   {
-      "offset": 117,
-      "type": "identifier.java",
-      "language": "java"
-   },
-   {
-      "offset": 123,
-      "type": "delimiter.java",
-      "language": "java"
-   },
-   {
-      "offset": 124,
-      "type": "identifier.java",
-      "language": "java"
-   },
-   {
-      "offset": 127,
-      "type": "delimiter.java",
-      "language": "java"
-   },
-   {
-      "offset": 128,
-      "type": "identifier.java",
-      "language": "java"
-   },
-   {
-      "offset": 135,
-      "type": "delimiter.parenthesis.java",
-      "language": "java"
-   },
    {
       "offset": 136,
       "type": "string.java",
@@ -149,7 +89,6 @@ console.log(JSON.stringify(result, null, 3));
 
 1. npm install monaco-languages
 2. select a language and copy its '.js' file
-3. remove `define` wrap for ASM style (change `export var ...` to `exports.` for ESM style)
+3. remove `define` wrap for ASM style (change `export var ...` to `exports.` for ESM style; see also [languages/cpp.js](https://github.com/dna2mirror/monarch.js/blob/master/languages/cpp.js))
 4. add `exports.name`
-
-see also the example of `languages/cpp.js`
+5. customized language by reading [Microsoft Monarch](https://microsoft.github.io/monaco-editor/monarch.html)
