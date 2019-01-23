@@ -1,6 +1,6 @@
 {
   "name": "monarch.js",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "monarch.js is migrated from Microsoft Monarch of Microsoft VSCode to parse source code text into tokens",
   "main": "index.js",
   "scripts": {
